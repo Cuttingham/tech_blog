@@ -1,0 +1,199 @@
+/* Styling for entire webpage */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Styling for the text in website */
+  body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    background-color:grey;
+  }
+  
+  /* Styling for Title area- Tech blog and Login */
+  a {
+    text-decoration: none;
+    color: rgb(95, 182, 18);
+    font-weight: bold;
+    transition: color .1s;
+    font-size:150%
+  }
+  main{
+    color:rgb(163, 0, 71);
+    background-color:rgb(74, 0, 67);
+  }
+  
+  /* When hovering over tech blog or login- change color */
+  a:hover {
+    color: rgb(82, 80, 80);
+  }
+  
+  /* button styling for all buttons in website */
+  button {
+    background-color: grey;
+    border: 0;
+    padding: 1%;
+    color: white;
+    font-weight: bold;
+    transition: background-color .1s;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  /* Styling for all hovering over buttons in website */
+  button:hover {
+    background-color: rgb(82, 80, 80);
+  }
+  
+  .post-list {
+    margin: 0;
+    padding: 0;
+  }
+  
+  textarea, input {
+    padding: .5%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /*Styling for comment box */
+  textarea:focus, input:focus {
+    outline: none;
+    border: 1px solid rgb(194, 190, 190);
+  }
+  
+  textarea {
+    min-width: 40%;
+    min-height: 100px;
+  }
+  
+  form > div {
+    margin-bottom: 2%;
+  }
+  
+  form label {
+    display: block;
+  }
+  
+  .wrapper {
+    width: 100%;
+    min-height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+  }
+  
+  header h1 {
+    font-size: 1em;
+  }
+  
+  main {
+    flex: 1;
+    padding: 2% 4%;
+  }
+  
+  /* Logout Styling */
+  .btn-no-style {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: grey;
+    font-size: 100%;
+    font-weight: bold;
+    transition: color .1s;
+    margin-left: 16px;
+  }
+  
+  /* Logout when hovering over */
+  .btn-no-style:hover {
+    background: none;
+    color: rgb(82, 80, 80);
+  }
+  
+  /* delete button styling */
+  .delete-post-btn {
+    background-color: red  ;
+  }
+  
+  /* delete button when hovering over */
+  .delete-post-btn:hover {
+    background-color: rgb(123, 40, 40);
+  }
+  
+  /* Start Post Styling */
+  .post {
+    margin-bottom: 2%;
+    line-height: 150%;
+  }
+  
+  .post .title span {
+    font-style: italic;
+    font-size: 90%;
+    color: #7d7d7d;
+  }
+  
+  .edit-link {
+    display: block;
+    margin: -1.5% 0 2% 0;
+  }
+  /* End Post Styling */
+
+  
+  /* Start Comment Styling */
+  .comment-form {
+    margin-bottom: 5%;
+  }
+  
+  .comment {
+    padding: 1%;
+    margin-bottom: 1%;
+  }
+  
+  .comment:nth-child(odd) {
+    background-color: #fff5eb;
+  }
+  
+  .comment .meta {
+    font-size: 90%;
+    margin-bottom: .5%;
+    opacity: .6;
+  }
+  /* End Comment Styling */
+
+
+  
+  /* Start Edit Post Styling */
+  .new-post-form input {
+    width: 300px;
+  }
+  
+  .edit-post-form {
+    margin-bottom: 5%;
+  }
+  /* End Edit Post Styling */
+
+  
+  
+  /* Footer Styling */
+  footer {
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    font-size: 110%;
+  }
+  

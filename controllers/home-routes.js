@@ -72,7 +72,7 @@ router.get('/post/:id', (req, res) => {
         return;
       }
 
-      const post = dbPostData.get({ plain: true });
+      const post = data.get({ plain: true });
 
       res.render('single-post', {
         post,
